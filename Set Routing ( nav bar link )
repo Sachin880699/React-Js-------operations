@@ -1,0 +1,40 @@
+======================== App.js =============
+
+import { BrowserRouter, BrowserRouter as Router, Link, Route, Switch } from "react-router-dom"
+
+
+import StudentList from "./Components/StudentList"
+import AddStudent from "./Components/AddStudent"
+import Login from "./Components/Login"
+import Register from "./Components/Register"
+import UpdateStudent from "./Components/UpdateStudent"
+
+
+<BrowserRouter>
+        <Switch>
+        <Router>
+          <Header />
+          
+          <Route path="/student_list"><StudentList/></Route>
+          <Route path="/add_student"><AddStudent/> </Route>
+          <Route path="/update_student"> <UpdateStudent/> </Route>
+          <Route path="/login" ><Login/> </Route>
+          <Route path="/register" ><Register/> </Route>
+          
+          </Router>
+        </Switch>
+      </BrowserRouter>
+      
+      
+      
+      
+      
+      ================================== Header.js ====================
+      import {BrowserRouter as Router, Link , Switch} from "react-router-dom"
+      
+      
+      <Link to="/student_list">Student List</Link>
+      <Link to="/add_student">Add Student</Link>
+      <Link to="/update_student">Update Student</Link>
+      <Link to="/register">Register</Link>
+      <Link to="/login">Login</Link>
