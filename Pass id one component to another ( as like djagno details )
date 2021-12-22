@@ -1,4 +1,4 @@
-======================= StudentList.js =================
+======================= StudentList.js ===================
 import { BrowserRouter as Router, Link, Switch } from "react-router-dom"
 
 <Link to={"update_student/"+res.id}> <button   className="btn btn-warning">Update</button></Link>
